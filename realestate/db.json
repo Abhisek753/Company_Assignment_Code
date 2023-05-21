@@ -1,0 +1,116 @@
+{
+    "random":[
+      
+        
+          {
+            "image": "https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg",
+            "address":"Banglore",
+            "price":"1200000",
+            "type":"House",
+             "id":1
+          },
+          {
+            "image": "https://www.allproperties.com.ph/wp-content/uploads/2022/06/House-and-Lot-For-Sale-Crown-Asia-House-Models.jpg",
+            "address":"Pune",
+            "price":"4200000",
+            "type":"House",
+             "id":2
+          },
+          {
+            "image": "https://property-arena.com/admin/images/project_image/gour-city/real-estate-property-in-Gurgaon.jpg",
+            "address":"Mumbai",
+            "price":"9200000",
+            "type":"House",
+             "id":3
+          },
+          {
+            "image": "https://images.squarespace-cdn.com/content/v1/563d3f37e4b0decf0f5cff44/1566445684560-VLH2I0FCUYZX8FXZE0E1/25385_Prado_Twilights_MLS-1-Edit.jpeg?format=1500w",
+            "address":"Kolkata",
+            "price":"5500000",
+            "type":"Flat",
+             "id":4
+          },
+          {
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGkNCQFRyNBASXwtdbEuJR-5ehGTwLNw4W2A&usqp=CAU",
+            "address":"Hydrabad",
+            "price":"2200000",
+            "type":"House",
+             "id":5
+          },
+          
+          {
+            "image": "https://static.toiimg.com/photo/msid-90653995/90653995.jpg",
+            "address":"Asansol",
+            "price":"5500000",
+            "type":"Tower",
+             "id":6
+          },
+          {
+            "image": "https://www.savills.in/_images/residential-real-estate-services-by-savills-india.jpg",
+            "address":"Goa",
+            "price":"1200000",
+            "type":"Mention",
+             "id":7
+          },
+          
+          {
+            "image": "https://images.squarespace-cdn.com/content/v1/563d3f37e4b0decf0f5cff44/1566445684560-VLH2I0FCUYZX8FXZE0E1/25385_Prado_Twilights_MLS-1-Edit.jpeg?format=1500w",
+            "address":"Gujrat",
+            "price":"25073680",
+            "type":"Building",
+             "id":8
+          },
+          {
+            "image": "https://i0.wp.com/goelgangadevelopments.com/wp-content/uploads/2019/11/Commercial-and-Residential-scaled.jpg?fit=2560%2C2560&ssl=1",
+            "address":"Rajasthan",
+            "price":"6742000",
+            "type":"Villa",
+             "id":9
+          },
+          {
+            "image": "https://static.toiimg.com/photo/msid-90653995/90653995.jpg",
+            "address":"Asansol",
+            "price":"5500000",
+            "type":"Tower",
+             "id":10
+          },
+          {
+            "image": "https://www.savills.in/_images/residential-real-estate-services-by-savills-india.jpg",
+            "address":"Goa",
+            "price":"1200000",
+            "type":"Mention",
+             "id":11
+          },
+          
+          {
+            "image": "https://images.squarespace-cdn.com/content/v1/563d3f37e4b0decf0f5cff44/1566445684560-VLH2I0FCUYZX8FXZE0E1/25385_Prado_Twilights_MLS-1-Edit.jpeg?format=1500w",
+            "address":"Gujrat",
+            "price":"25073680",
+            "type":"Building",
+             "id":12
+          },
+          {
+            "image": "https://i0.wp.com/goelgangadevelopments.com/wp-content/uploads/2019/11/Commercial-and-Residential-scaled.jpg?fit=2560%2C2560&ssl=1",
+            "address":"Rajasthan",
+            "price":"345678000",
+            "type":"Villa",
+             "id":13
+          },
+          {
+            "image": "https://static.toiimg.com/photo/msid-90653995/90653995.jpg",
+            "address":"Asansol",
+            "price":"8880000",
+            "type":"Tower",
+             "id":14
+          },
+          {
+            "image": "https://www.savills.in/_images/residential-real-estate-services-by-savills-india.jpg",
+            "address":"Goa",
+            "price":"1111000",
+            "type":"Mention",
+             "id":15
+          }
+          
+        
+    ]
+}
