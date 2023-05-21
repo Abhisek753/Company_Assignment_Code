@@ -2,30 +2,13 @@ import {
   Grid,
   Avatar,
   Box,
-  Container,
   Flex,
   Spacer,
-  Text,
-  Wrap,
-  WrapItemm,
-  Stack,
   Select,
-  WrapItem,
-  Option,
   Input,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  GridItem,
-  MenuDivider,
-  Heading,
 } from "@chakra-ui/react";
-import { EmailIcon, ChevronDownIcon } from "@chakra-ui/icons";
+
 import { Link, Navigate } from "react-router-dom";
 //   import { Appcontext } from "./Statemange";
 import { Profiler, useContext } from "react";
@@ -62,14 +45,18 @@ export default function Navbar() {
             <Spacer />
             <Select bg="plum" placeholder="Select">
               <option value="English">English</option>
-               <option value="hindi">hindi</option>
+              <option value="hindi">hindi</option>
               <option value="Marathi">Marathi</option>
-               <option value="Bengoli">Bengoli</option>
+              <option value="Bengoli">Bengoli</option>
             </Select>
             <Spacer />
-            
-            <Spacer />
 
+            <Spacer />
+            <Link to={"/save"}>
+              <Button mr="10px" bgColor={"plum"} p={"25px"}>
+                Saved
+              </Button>
+            </Link>
             <Spacer />
             {/* {loginstate == false ? true : null} */}
             <Spacer />

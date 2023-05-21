@@ -44,6 +44,8 @@ import axios from "axios";
     useEffect(() => {
       getdata(id);
     }, [id]);
+
+   
   
     return (
       <Container maxW={"7xl"}>
