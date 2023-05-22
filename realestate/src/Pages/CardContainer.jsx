@@ -20,6 +20,9 @@ export default function CardContainer({
   deleteToggle,
 }) {
   const [delData, setdelData] = useState([]);
+  const recipient = "properachievement@gmail.com";
+  const subject = "Hello from Chakra React";
+  const body = "This is the body of the email.";
   
   const saveproperty = () => {
     let savearr = JSON.parse(localStorage.getItem("saveproperty")) || [];
@@ -38,6 +41,11 @@ export default function CardContainer({
     localStorage.setItem("saveproperty", JSON.stringify(updatedData));
    
     window.location.reload()
+  };
+  const handleEmailClick = () => {
+    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
   };
 
   
@@ -86,9 +94,11 @@ export default function CardContainer({
           />
         </Box>
         <Stack pt={10} align={"center"}>
+        {deleteToggle?<Text onClick={handleEmailClick} color={"red"} bgColor={"blue.400"} p={"2px 10px 2px 10px"} w={"50%"} >Contact</Text>:
+
           <Text color={"gray.500"} fontSize={"sm"} textTransform={"uppercase"}>
             {type}
-          </Text>
+          </Text>}
 
           <Stack direction={"row"} align={"center"}>
             <Text fontWeight={800} fontSize={"xl"}>
@@ -117,7 +127,7 @@ export default function CardContainer({
           >
             <Link to={`/${id}`}>More Details</Link>
           </Heading>
-
+          
           <Heading
             onClick={deleteToggle ? () => deleteProperty(id) : saveproperty}
             fontSize={"2xl"}
@@ -126,10 +136,11 @@ export default function CardContainer({
             borderRadius={"20px"}
             p={"5px 10px"}
             fontWeight={500}
-            mb={"20px"}
+            
           >
             {deleteToggle ? "Delete" : "Save"}
           </Heading>
+
         </Stack>
       </Box>
     </Center>
