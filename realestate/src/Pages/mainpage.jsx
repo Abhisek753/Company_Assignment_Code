@@ -25,7 +25,7 @@ export default function MainPage() {
   const getData = async (cat, order) => {
     try {
       let res = await axios.get(
-        `http://localhost:3000/random?&_page=${page}&_limit=10&_sort=price&_order=${order}&q=${sdata}`
+        `https://real-statedata.vercel.app/random?&_page=${page}&_limit=10&_sort=price&_order=${order}&q=${sdata}`
       );
       let data = await res.data;
       console.log(data);

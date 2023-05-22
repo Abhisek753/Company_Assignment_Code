@@ -29,7 +29,7 @@ import axios from "axios";
     const { id } = useParams();
   
     const getdata = async (id) => {
-       let res= await axios.get(`http://localhost:3000/random/${id}`)
+       let res= await axios.get(`https://real-statedata.vercel.app/random/${id}`)
         let data= await res.data;
         console.log(data)
         setdata(data)
@@ -45,7 +45,15 @@ import axios from "axios";
       getdata(id);
     }, [id]);
 
-   
+    const savedproperty = () => {
+      let savearr = JSON.parse(localStorage.getItem("saveproperty")) || [];
+  
+      savearr.push(+id);
+  
+      localStorage.setItem("saveproperty", JSON.stringify(savearr));
+  
+      console.log(id);
+    };
   
     return (
       <Container maxW={"7xl"}>
@@ -141,6 +149,8 @@ import axios from "axios";
                 transform: "translateY(2px)",
                 boxShadow: "lg",
               }}
+            onClick={savedproperty}
+
             >
              Save Your Property
             </Button>

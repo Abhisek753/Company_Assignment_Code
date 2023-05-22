@@ -40,13 +40,13 @@
           
           {
             "image": "https://static.toiimg.com/photo/msid-90653995/90653995.jpg",
-            "address":"Asansol",
+            "address":"Agra",
             "price":"5500000",
             "type":"Tower",
              "id":6
           },
           {
-            "image": "https://www.savills.in/_images/residential-real-estate-services-by-savills-india.jpg",
+            "image": "https://i.pinimg.com/originals/cd/95/86/cd958642f00e5082060ff6f15f282866.png",
             "address":"Goa",
             "price":"1200000",
             "type":"Mention",
@@ -55,7 +55,7 @@
           
           {
             "image": "https://images.squarespace-cdn.com/content/v1/563d3f37e4b0decf0f5cff44/1566445684560-VLH2I0FCUYZX8FXZE0E1/25385_Prado_Twilights_MLS-1-Edit.jpeg?format=1500w",
-            "address":"Gujrat",
+            "address":"Tirupati",
             "price":"25073680",
             "type":"Building",
              "id":8
@@ -76,7 +76,7 @@
           },
           {
             "image": "https://www.savills.in/_images/residential-real-estate-services-by-savills-india.jpg",
-            "address":"Goa",
+            "address":"Neamatpur",
             "price":"1200000",
             "type":"Mention",
              "id":11
@@ -104,8 +104,8 @@
              "id":14
           },
           {
-            "image": "https://www.savills.in/_images/residential-real-estate-services-by-savills-india.jpg",
-            "address":"Goa",
+            "image": "https://assets-news.housing.com/news/wp-content/uploads/2022/10/12093520/Types-of-building-materials.jpg",
+            "address":"Madhopur",
             "price":"1111000",
             "type":"Mention",
              "id":15
