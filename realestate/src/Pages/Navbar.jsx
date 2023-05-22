@@ -7,17 +7,30 @@ import {
   Select,
   Input,
   Button,
+  useDisclosure,
 } from "@chakra-ui/react";
 
 import { Link, Navigate } from "react-router-dom";
 //   import { Appcontext } from "./Statemange";
-import { Profiler, useContext } from "react";
+import { Profiler, useContext, useEffect, useState } from "react";
 import { Searchcontext } from "../Components/Searchcontex";
 import { MdPerson } from "react-icons/md";
+import { auth } from "../Components/firebase";
+import { LoginPage } from "../Components/LoginPage";
+import { SignUpPage } from "../Components/SignUpPage";
+import SignOut from "../Components/Signout";
+
 
 export default function Navbar() {
   // const [sname,setSname]=useState("")
   // const {  loginstate, setloginstate } = useContext(Appcontext);
+  const [userName, setUserName] = useState("");
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const {
+    isOpen: sIsOpen,
+    onOpen: sOnOpen,
+    onClose: sOnClose,
+  } = useDisclosure();
   const { sdata, setSdata } = useContext(Searchcontext);
   const handelChange = (e) => {
     const val = e.target.value;
@@ -25,6 +38,17 @@ export default function Navbar() {
     setSdata(val);
   };
   console.log(sdata);
+  useEffect(() => {
+    auth.onAuthStateChanged(async (user) => {
+      if (user) {
+        console.log(user);
+
+        console.log(user.displayName);
+        await setUserName(user.displayName);
+        //  console.log(userName)
+      } else setUserName("");
+    });
+  }, []);
 
   return (
     <>
@@ -68,12 +92,32 @@ export default function Navbar() {
               p={"25px"}
               //  onClick={() => setloginstate(false)}
             >
-              Logout
+              {/* Logout */}
+              {userName ? (
+            <SignOut />
+          ) : (
+            <SignUpPage
+              isOpen={sIsOpen}
+              onClose={sOnClose}
+              onOpen={sOnOpen}
+              lOpen={onOpen}
+            />
+          )}
             </Button>
             {/* ) : ( */}
             <Button bgColor={"plum"} p={"25px"}>
               {" "}
-              <Link to="/login">Login</Link>
+              {/* <Link to="/login"></Link> */}
+              {userName ? (
+            userName
+          ) : (
+            <LoginPage
+              isOpen={isOpen}
+              onClose={onClose}
+              onOpen={onOpen}
+              sOnOpen={sOnOpen}
+            />
+          )}
             </Button>
             {/* )} */}
             <Spacer />
